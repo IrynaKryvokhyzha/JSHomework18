@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		const currentYear = 2023
+
+		function getAge() {
+			const birthYear = parseFloat(document.getElementsByClassName('.year').value)
+			const userAge = currentYear - birthYear
+			document.getElementById('years').innerHTML = userAge
+		}
+		window.onload = function(){
+			document.querySelector('button').onclick = getAge
+		}
+	</script>
+</head>
+<body>
+	<h1> Задача 3</h1>
+	<p>
+		Користувач задає рік народження. Визначити кількість років користувача.	
+	</p>
+	<div>
+		<label class="year">
+			Рік народження
+			<input type="number" value="1980">
+		</label>
+		<div>
+			<button type="submit" class="button">Обчислити</button>
+		</div>
+		<div>
+			Ваш вік = <span id = "years"></span>
+		</div>
+	</div>
+</body>
+
+</html>
+

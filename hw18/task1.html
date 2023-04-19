@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 18</title>
+		<script>
+			function getResult(operation) {
+				const num1 = parseFloat(document.getElementById('First').value)
+				const num2 = parseFloat(document.getElementById('Second').value)
+				const result = operation(num1,num2)
+				document.getElementById('result').value = result
+			}
+			const add = (num1,num2)=>num1+num2
+			const substract = (num1,num2) => num1-num2
+			const multiply = (num1,num2) => num1*num2
+			const divide = (num1,num2) => num1/num2
+			window.onload = function () {
+				document.getElementById('add').onclick = () => getResult(add)
+				document.getElementById('substract').onclick = () => getResult(substract)
+				document.getElementById('multiply').onclick = () => getResult(multiply)
+				document.getElementById('divide').onclick = () => getResult(divide)
+				
+			}
+	</script>
+</head>
+<body>
+	<h1> Задача 1. Розробити калькулятор</h1>
+	<label>
+	First number
+	<input id="First" type="number" placeholder="Type first number" value="0">
+	</label><br>
+	<label>
+	Second number
+	<input id="Second" type="number" placeholder="Type second number" value="0">
+	</label>
+	<div>
+		<button id="add" type="button">Add</button>
+		<button id="substract" type="button">Substract</button>
+		<button id="multiply" type="button">Multiply</button>
+		<button id="divide" type="button">Divide</button>
+	</div>
+
+	<label>
+		Result
+		<input id="result" type="number" value="0">
+	</label>
+
+</body>
+
+</html>
+

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+
+body{
+	font-family: 'Lato';
+	background-color: rgb(213, 204, 175);
+	font-size: 30px;
+	padding-left: 20px;
+}
+.task {
+}
+
+h1{
+	color: rgb(53, 47, 14);
+	margin: 20px;
+}
+h2{
+	color: rgb(69, 64, 36);
+	margin: 20px;
+	font-size: 30px;
+}
+p{
+
+	font-size: 20px;
+	max-width: 600px;
+	margin-left: 10px;
+}
+select{
+	margin-left: 50px;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 5px;
+	background-color: rgb(231, 175, 72);
+}
+label {
+	font-size: 20px;
+	font-weight: 700;
+	margin-left: 50px;
+}
+
+.dropdown {
+}
+.checkbox {
+}
+.radio-button {
+}
+.button {
+	width: 150px;
+	background-color: rgb(231, 175, 72);
+	margin-left: 50px;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 5px;
+	border-radius: 4px;
+	transition: all 0.3s ease 0s;
+}
+.button:hover{
+	background-color: rgb(242, 204, 134);
+}
+.rasult {
+	color: rgb(69, 64, 36);
+	margin: 20px;
+	font-size: 40px;
+	font-weight: 700;
+}

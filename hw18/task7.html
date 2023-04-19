@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 7</title>
+	<link rel="stylesheet" href="style.css/style7.css" type="text/css">
+</head>
+<body>
+	<div class="task">
+		<h1> Задача 7</h1>
+		<p>
+			Подорож складається з 3 етапів. На кожному етапі користувач може вибрати один з видів транспорту 
+			(авто, автобус, літак - випадаючий список), харчування (сніданок, обід, вечеря – checkbоx) 
+			та одного з 3-х гідів (використати  - radio buttons). 
+			Ціни визначте самі. Підрахувати загальну вартість.
+
+		</p>
+	</div>
+	<div class="dropdown">
+		<h2>Choose transportation type</h2>
+		<select name="Transportation" id="transport">
+			<option value="500">car</option>
+			<option value="700">bus</option>
+			<option value="1200">airplane</option>
+		</select>
+	</div>
+	<div id="meals" class="checkbox">
+		<h2>Choose meal</h2>
+		<label for="breakfast">
+			breakfast
+			<input type="checkbox" value="50">
+		</label>
+				<label for="lunch">
+			lunch
+			<input type="checkbox" value="70">
+		</label>
+				<label for="dinner">
+			dinner
+			<input type="checkbox" value="60">
+		</label>
+	</div>
+	<div class="radio-button">
+		<h2>Choose guide</h2>
+		<label for="guide_1">
+			Guide Alex
+			<input id="guide_1" type="radio" name="guide" value="100">
+		</label>
+		<label for="guide_2">
+			Guide Ben
+			<input id="guide_2" type="radio" name="guide" value="120">
+		</label>
+		<label for="guide_3">
+			Guide John
+			<input id="guide_3" type="radio" name="guide" value="110">
+		</label>
+	</div>
+	<button class="button" type="submit">Get sum</button>
+	<div class="rasult">Total Price = <span id="result"></span> grn </div>
+	<script src = "js/script7.js"></script>
+</body>
+
+</html>
+
